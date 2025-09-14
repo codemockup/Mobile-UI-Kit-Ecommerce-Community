@@ -1,27 +1,89 @@
-# Compiled class file
-*.class
+# =========================================
+# Android / Kotlin / Jetpack Compose .gitignore
+# =========================================
 
-# Log file
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Local configuration
+local.properties
+*.keystore
+*.jks
+*.pem
+*.p12
+*.key
+*.der
+signing.properties
+secrets.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+captures/
+navigation.json
+
+# Generated files
+.generated/
+bin/
+gen/
+tmp/
+intermediates/
+obj/
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
 *.log
 
-# BlueJ files
-*.ctxt
+# APK / Bundles
+*.apk
+*.ap_
+*.aab
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Crashlytics / Firebase
+crashlytics-build.properties
+fabric.properties
+google-services.json
+app/google-services.json
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# KSP / KAPT
+ksp/
+build/generated/
+build/tmp/kapt3/
+*.ksp
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Jetpack Compose preview cache
+.idea/deploymentTargetDropDown.xml
+.idea/assetWizardSettings.xml
+.idea/misc.xml
+.idea/caches/
 
-# Kotlin Gradle plugin data, see https://kotlinlang.org/docs/whatsnew20.html#new-directory-for-kotlin-data-in-gradle-projects
-.kotlin/
+# Gradle local cache
+gradle-app.setting
+
+# Kotlin specific
+*.kotlin_module
+*.class
+
+# Proguard / R8
+proguard/
+*.mapping
+
+# Test reports
+test-results/
+reports/
+CLAUDE.md
+
+# =========================================
+# END OF FILE
+# =========================================

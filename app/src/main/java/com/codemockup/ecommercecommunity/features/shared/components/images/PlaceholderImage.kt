@@ -15,7 +15,7 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.codemockup.ecommercecommunity.R
-import com.codemockup.ecommercecommunity.features.theme.Gray500
+import com.codemockup.ecommercecommunity.features.theme.Gray300
 import com.codemockup.ecommercecommunity.features.theme.Surface0
 
 
@@ -43,7 +43,7 @@ fun PlaceholderImage(
             .clip(shape)
             .then(
                 if (placeholderResourceId == null) {
-                    Modifier.Companion.background(Gray500.copy(alpha = 0.75f))
+                    Modifier.Companion.background(Gray300)
                 } else Modifier
             )
             .padding(8.dp)

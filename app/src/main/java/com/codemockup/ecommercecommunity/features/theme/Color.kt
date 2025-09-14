@@ -11,6 +11,7 @@ val Primary400 = Color(0xFFFFA451)
 val Gray100 = Color(0xFFF3F4F9)
 val Gray200 = Color(0xFFF3F1F1)
 val Gray300 = Color(0xFFC2BDBD)
+val Gray400 = Color(0xFF86869E)
 
 val Success100 = Color(0xFFF0FEF8)
 val Success400 = Color(0xFF4CD964)

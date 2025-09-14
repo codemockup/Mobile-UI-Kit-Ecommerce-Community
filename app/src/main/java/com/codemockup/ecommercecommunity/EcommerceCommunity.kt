@@ -16,7 +16,7 @@ class EcommerceCommunity : Application() {
         /// initialize Sentry
         SentryService.init(
             context = this,
-            isEnable = true
+            isEnable = false
         )
 
         if (GlobalContext.getOrNull() == null) {

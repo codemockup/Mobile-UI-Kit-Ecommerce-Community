@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VenturoKotlinComposeSkeleton"
         tools:targetApi="31">
+        <!-- Disable sentry auto init, manually initialize from Application-->
+        <provider
+            android:name="io.sentry.android.core.SentryInitProvider"
+            android:authorities="${applicationId}.sentry-init-provider"
+            tools:node="remove" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

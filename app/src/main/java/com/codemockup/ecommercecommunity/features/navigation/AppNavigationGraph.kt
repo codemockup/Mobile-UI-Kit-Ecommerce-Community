@@ -7,7 +7,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.codemockup.ecommercecommunity.features.screens.authentication.views.pages.AuthenticationPage
 import com.codemockup.ecommercecommunity.features.screens.home.views.pages.HomePage
+import com.codemockup.ecommercecommunity.features.screens.welcome.views.pages.WelcomePage
 import com.codemockup.ecommercecommunity.utils.helper.NavigationHelper
 import org.koin.compose.koinInject
 
@@ -78,8 +80,16 @@ fun AppNavigationGraph(
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Home.route,
+        startDestination = Screen.Welcome.route,
     ) {
+        composable(route = Screen.Welcome.route) {
+            WelcomePage()
+        }
+
+        composable(route = Screen.Authentication.route) {
+            AuthenticationPage()
+        }
+
         composable(route = Screen.Home.route) {
             HomePage()
         }

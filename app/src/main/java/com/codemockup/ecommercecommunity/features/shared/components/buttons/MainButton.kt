@@ -26,6 +26,7 @@ fun MainButton(
     title: String = stringResource(R.string.tap_me),
     type: ButtonType = ButtonType.PRIMARY,
     wrap: Boolean = false,
+    enabled: Boolean = true,
     contentPadding: PaddingValues = PaddingValues(16.dp),
     onClick: () -> Unit = {}
 ) {
@@ -50,6 +51,7 @@ fun MainButton(
             containerColor = buttonColor,
             contentColor = buttonContentColor
         ),
+        enabled = enabled,
         border = BorderStroke(2.dp, buttonContentColor),
         shape = RoundedCornerShape(10.dp),
         onClick = onClick

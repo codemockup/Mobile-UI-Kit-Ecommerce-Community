@@ -29,42 +29,51 @@ fun PrimaryInput(
     onValueChange: (String) -> Unit,
     modifier: Modifier = Modifier,
     hint: String = "",
+    label: String? = null,
     leadingIcon: @Composable (() -> Unit)? = null,
     singleLine: Boolean = true
 ) {
-    TextField(
-        value = value,
-        onValueChange = onValueChange,
-        modifier = modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-        placeholder = {
-            if (hint.isNotBlank()) Text(
-                hint, style = MaterialTheme.typography.titleMedium.copy(
-                    color = Gray400,
-                    fontWeight = FontWeight.Normal,
-                )
+    Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+        label?.let {
+            Text(
+                it,
+                style = MaterialTheme.typography.titleMedium.copy(color = FontBlack)
             )
-        },
-        textStyle = MaterialTheme.typography.titleMedium.copy(
-            color = FontBlack,
-            fontWeight = FontWeight.Normal
-        ),
-        leadingIcon = leadingIcon,
-        singleLine = singleLine,
-        shape = RoundedCornerShape(10.dp),
-        colors = TextFieldDefaults.colors(
-            focusedContainerColor = Gray100,
-            unfocusedContainerColor = Gray100,
-            disabledContainerColor = Gray100,
-            focusedIndicatorColor = Color.Transparent,
-            unfocusedIndicatorColor = Color.Transparent,
-            disabledIndicatorColor = Color.Transparent,
-            cursorColor = Primary400,
-            focusedTextColor = FontBlack,
-            unfocusedTextColor = FontBlack
+        }
+        TextField(
+            value = value,
+            onValueChange = onValueChange,
+            modifier = modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+            placeholder = {
+                if (hint.isNotBlank()) Text(
+                    hint, style = MaterialTheme.typography.titleMedium.copy(
+                        color = Gray400,
+                        fontWeight = FontWeight.Normal,
+                    )
+                )
+            },
+            textStyle = MaterialTheme.typography.titleMedium.copy(
+                color = FontBlack,
+                fontWeight = FontWeight.Normal
+            ),
+            leadingIcon = leadingIcon,
+            singleLine = singleLine,
+            shape = RoundedCornerShape(10.dp),
+            colors = TextFieldDefaults.colors(
+                focusedContainerColor = Gray100,
+                unfocusedContainerColor = Gray100,
+                disabledContainerColor = Gray100,
+                focusedIndicatorColor = Color.Transparent,
+                unfocusedIndicatorColor = Color.Transparent,
+                disabledIndicatorColor = Color.Transparent,
+                cursorColor = Primary400,
+                focusedTextColor = FontBlack,
+                unfocusedTextColor = FontBlack
+            )
         )
-    )
+    }
 
 }
 

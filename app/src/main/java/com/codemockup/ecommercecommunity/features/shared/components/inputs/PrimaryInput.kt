@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.codemockup.ecommercecommunity.features.theme.FontBlack
@@ -33,7 +34,10 @@ fun PrimaryInput(
     leadingIcon: @Composable (() -> Unit)? = null,
     singleLine: Boolean = true
 ) {
-    Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+    Column(
+        modifier = modifier,
+        verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
         label?.let {
             Text(
                 it,
@@ -43,15 +47,18 @@ fun PrimaryInput(
         TextField(
             value = value,
             onValueChange = onValueChange,
-            modifier = modifier
+            modifier = Modifier
                 .fillMaxWidth()
                 .heightIn(min = 48.dp),
             placeholder = {
                 if (hint.isNotBlank()) Text(
-                    hint, style = MaterialTheme.typography.titleMedium.copy(
+                    hint,
+                    style = MaterialTheme.typography.titleMedium.copy(
                         color = Gray400,
                         fontWeight = FontWeight.Normal,
-                    )
+                    ),
+                    overflow = TextOverflow.Ellipsis,
+                    maxLines = if (singleLine) 1 else Int.MAX_VALUE,
                 )
             },
             textStyle = MaterialTheme.typography.titleMedium.copy(

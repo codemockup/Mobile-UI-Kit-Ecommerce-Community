@@ -14,4 +14,7 @@
     <string name="start_ordering">Start Ordering</string>
     <string name="fortune_cookie">Fortune Cookie</string>
     <string name="what_is_your_name">What is your name?</string>
+    <string name="search_for_fruit_salad_combos">Search for fruit salad combos</string>
+    <string name="home_greeting">Hello Fortune, What fruit salad combo do you want today?</string>
+    <string name="home_greeting_highlighted">What fruit salad combo do you want today?</string>
 </resources>

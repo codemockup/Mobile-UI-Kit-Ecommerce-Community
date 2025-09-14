@@ -25,7 +25,9 @@ import com.codemockup.ecommercecommunity.features.theme.White
 
 @Composable
 fun MainIconButton(
+    modifier: Modifier = Modifier,
     onClick: () -> Unit,
+    icon: Int,
     type: ButtonType = ButtonType.PRIMARY,
     buttonContainer: Color? = null,
     buttonContentColor: Color? = null,
@@ -43,7 +45,7 @@ fun MainIconButton(
     val iconSize = when (size) {
         ButtonSize.SMALL -> 24.dp
         ButtonSize.MEDIUM -> 32.dp
-        ButtonSize.LARGE -> 48.dp
+        ButtonSize.LARGE -> 56.dp
     }
     val iconContentPadding = when (size) {
         ButtonSize.SMALL -> 6.dp
@@ -52,7 +54,7 @@ fun MainIconButton(
     }
     IconButton(
         onClick = onClick,
-        modifier = Modifier
+        modifier = modifier
             .size(iconSize)
             .border(
                 width = 1.dp,
@@ -65,7 +67,7 @@ fun MainIconButton(
         ),
     ) {
         Image(
-            painter = painterResource(R.drawable.ic_plus),
+            painter = painterResource(icon),
             contentDescription = null,
             modifier = Modifier
                 .fillMaxSize()
@@ -82,16 +84,19 @@ fun MainIconButtonPreview() {
     ) {
         MainIconButton(
             onClick = {},
+            icon = R.drawable.ic_plus,
             size = ButtonSize.SMALL,
             type = ButtonType.PRIMARY
         )
         MainIconButton(
             onClick = {},
+            icon = R.drawable.ic_plus,
             size = ButtonSize.MEDIUM,
             type = ButtonType.PRIMARY
         )
         MainIconButton(
             onClick = {},
+            icon = R.drawable.ic_plus,
             size = ButtonSize.LARGE,
             type = ButtonType.PRIMARY,
         )

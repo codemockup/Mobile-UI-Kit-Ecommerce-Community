@@ -11,15 +11,19 @@ Designed by **[Adolphus Chris](https://www.figma.com/community/file/875021148028
 - 📦 Modular + reusable design system  
 - 🌙 Supports **Dark / Light themes**  
 
----
+[//]: # (---)
 
-## 🖼️ Preview  
+[//]: # (## 🖼️ Preview  )
 
-> ⚡ Add your screenshots here once available  
+[//]: # (> ⚡ Add your screenshots here once available  )
 
-| Home Screen | Product Detail | Cart |
-|-------------|----------------|------|
-| ![Home](docs/screenshots/home.png) | ![Product](docs/screenshots/product.png) | ![Cart](docs/screenshots/cart.png) |
+[//]: # ()
+
+[//]: # (| Home Screen | Product Detail | Cart |)
+
+[//]: # (|-------------|----------------|------|)
+
+[//]: # (| ![Home]&#40;docs/screenshots/home.png&#41; | ![Product]&#40;docs/screenshots/product.png&#41; | ![Cart]&#40;docs/screenshots/cart.png&#41; |)
 
 ---
 

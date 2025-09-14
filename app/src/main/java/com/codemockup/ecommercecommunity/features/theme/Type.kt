@@ -11,7 +11,7 @@ import com.codemockup.ecommercecommunity.R
 val primaryFontFamily = FontFamily(
     Font(R.font.brandon_regular, FontWeight.Normal),
     Font(R.font.brandon_medium, FontWeight.Medium),
-    Font(R.font.brandon_bold, FontWeight.Bold),
+//    Font(R.font.brandon_bold, FontWeight.Bold),
 )
 
 

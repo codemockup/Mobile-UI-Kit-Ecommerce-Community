@@ -57,7 +57,7 @@ fun MainButton(
         Text(
             modifier = Modifier.padding(contentPadding),
             text = title,
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.titleSmall,
         )
     }
 }

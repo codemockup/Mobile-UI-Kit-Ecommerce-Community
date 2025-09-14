@@ -7,4 +7,8 @@
     <string name="icon">icon</string>
     <string name="tap_me">Tap Me</string>
     <string name="go_back">Go Back</string>
+    <string name="fruit_basket_desc">fruit_basket</string>
+    <string name="welcoming_title">Get The Freshest Fruit Salad Combo</string>
+    <string name="welcoming_subtitle">We deliver the best and freshest fruit salad in town. Order for a combo today!!!</string>
+    <string name="let_s_continue">Let’s Continue</string>
 </resources>
